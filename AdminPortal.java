@@ -4,9 +4,9 @@ import java.util.List;
 public class AdminPortal {
     public static void main(String[] args) {
         List<SchoolManagementApp> systems = List.of(
-                new AttendanceSystemAdapter(new AttendanceSystem(), "12345", "A"),
-                new GradingSystemAdapter(new GradingSystem(), "CS101", 1.25),
-                new LibrarySystemAdapter(new LibrarySystem(), "ADD", "Clean Code")
+                new AttendanceSystemAdapter(new AttendanceSystem()),
+                new GradingSystemAdapter(new GradingSystem()),
+                new LibrarySystemAdapter(new LibrarySystem())
         );
 
         for (SchoolManagementApp system : systems) {
